@@ -6,13 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Giorgina Cali</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward" />
     <script src="script.js" defer></script>
+    <script src="swiper.js" defer></script>
+
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" /> -->
 </head>
 
 <body>
 
     <!-- Navigatiebar algemeen-->
-
     <!-- logo links -->
     <div class="navbar">
         <div class="container">
@@ -48,6 +51,7 @@
             </div>
         </div>
     </div>
+
     <!-- home page  -->
     <section class="container">
         <div class="info">
@@ -64,6 +68,28 @@
             </div>
         </div>
     </section>
+
+    <!-- Card slider -->
+    <section class="container">
+        <div class="card-wrapper">
+            <ul class="card-list">
+                <li class="card-item">
+                    <a href="#" class="card-link">
+                        <img src="img/SV-unity.png" alt="" class="card-image">
+                        <p class="badge">SV-Unity</p>
+                        <h2 class="card-title">De opdracht van dit project was om tijdens een gesprek met de klant hun ideeën te verzamelen en deze vervolgens zelfstandig uit te werken tot een passend eindproduct. </h2>
+                        <button class="card-button material-symbols-outlined">
+                            arrow_forward
+                        </button>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+
+
+
 </body>
 
 </html>
