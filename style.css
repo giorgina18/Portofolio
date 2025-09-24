@@ -10,12 +10,18 @@ body {
     color: #333;
 }
 
+.card-wrapper {
+    max-width: 1100px;
+    margin: 0 60px 35px;
+    padding: 20px 10px;
+    overflow: hidden;
+}
+
 .container {
     max-width: 1100px;
     margin: 0 auto;
     padding: 0 12px;
 }
-
 
 /* naviegatie bar */
 .navbar {
@@ -156,13 +162,9 @@ button:hover {
 
 
 /* card slider */
-
-.card-list .card-item {
-    list-style: none;
-}
-
 .card-list .card-item .card-link {
-    width: 400px;
+    user-select: none;
+    /* width: 400px; */
     display: block;
     background: #fff;
     padding: 18px;
@@ -171,6 +173,10 @@ button:hover {
     border: 2px solid transparent;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
     transition: 0.2s ease;
+}
+
+.card-list .card-item .card-link:active{
+    cursor: grabbing;
 }
 
 .card-list .card-item .card-link:hover {
@@ -184,6 +190,7 @@ button:hover {
     border-radius: 10px;
 }
 
+/* badge kleur / style */
 .card-list .card-link .badge {
     color: #5372f0;
     padding: 8px 16px;
@@ -194,6 +201,33 @@ button:hover {
     width: fit-content;
     border-radius: 50px;
 }
+
+.card-list .card-link:hover .card-button {
+    background: #5372f0;
+    color: #fff;
+}
+
+.card-list .card-link .badge.back_end {
+    background: #7870f0;
+    color: #3d389d;
+}
+
+.card-list .card-link .badge.museum {
+    background: #f451b3;
+    color: #981062;
+}
+
+.card-list .card-link .badge.webshop {
+    background: #49f7c3;
+    color: #188872;
+}
+
+.card-list .card-link .badge.input_output {
+    background: #fff56d;
+    color: #817a20;
+}
+
+/* eind badge style */
 
 .card-list .card-link .card-title {
     font-size: 1rem;
@@ -215,38 +249,21 @@ button:hover {
     transition: 0.4s ease;
 }
 
-.card-list .card-link:hover .card-button {
+.card-wrapper .swiper-pagination-bullet {
+    height: 13px;
+    width: 13px;
+    opacity: 0.5;
     background: #5372f0;
-    color: #fff;
 }
 
-.card-list .card-link .badge.back_end {
-    background: #7870f0;
-    color: #3d389d;
+.card-wrapper .swiper-pagination-bullet-active {
+    opacity: 1;
 }
 
-.card-list .card-link .badge.museum{
- background: #f451b3;
-    color: #981062;
+.card-wrapper .swiper-slide-button {
+    color: #5372f0;
+    margin-top: -35px;
 }
-
-.card-list .card-link .badge.webshop{
- background: #49f7c3;
-    color: #188872;
-}
-
-.card-list .card-link .badge.input_output{
- background: #fff56d;
-    color: #817a20;
-
-}
-
-
-
-
-
-
-
 
 /* Responsive */
 @media (max-width: 768px) {
@@ -279,4 +296,12 @@ button:hover {
         margin-left: auto;
     }
 
+    /* card slider */
+    .card-wrapper {
+        margin: 0 10px 25px;
+    }
+
+    .card-wrapper .swiper-slide-button {
+        display: none;
+    }
 }
