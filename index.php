@@ -73,11 +73,56 @@
     <section class="container">
         <div class="card-wrapper">
             <ul class="card-list">
+                <!-- sv_unity -->
                 <li class="card-item">
                     <a href="#" class="card-link">
                         <img src="img/SV-unity.png" alt="" class="card-image">
                         <p class="badge">SV-Unity</p>
                         <h2 class="card-title">De opdracht van dit project was om tijdens een gesprek met de klant hun ideeën te verzamelen en deze vervolgens zelfstandig uit te werken tot een passend eindproduct. </h2>
+                        <button class="card-button material-symbols-outlined">
+                            arrow_forward
+                        </button>
+                    </a>
+                </li>
+                <!-- back end -->
+                <li class="card-item">
+                    <a href="#" class="card-link">
+                        <img src="img/registratie.png" alt="" class="card-image">
+                        <p class="badge back_end">Back end</p>
+                        <h2 class="card-title">De opdracht van dit project was om de back-end security te versterken, zodat gebruikers niet te maken krijgen met broken access control.</h2>
+                        <button class="card-button material-symbols-outlined">
+                            arrow_forward
+                        </button>
+                    </a>
+                </li>
+                <!-- nxt museum -->
+                <li class="card-item">
+                    <a href="#" class="card-link">
+                        <img src="img/nxtmuseum.png" alt="" class="card-image">
+                        <p class="badge museum">NXT museum</p>
+                        <h2 class="card-title">De opdracht van dit project was om een professionele, tweetalige museumwebsite te maken met informatie, afbeeldingen en bezoekersreviews.</h2>
+                        <button class="card-button material-symbols-outlined">
+                            arrow_forward
+                        </button>
+                    </a>
+                </li>
+                <!-- webshop -->
+                <li class="card-item">
+                    <a href="#" class="card-link">
+                        <img src="img/webshop.png" alt="" class="card-image">
+                        <p class="badge webshop">Webshop</p>
+                        <h2 class="card-title">De opdracht van dit project was om een webshop te maken op basis van de gegeven layout en stijl. Ik heb de webshop gebaseerd op Bol.com en voorzien van drie features. </h2>
+                        <button class="card-button material-symbols-outlined">
+                            arrow_forward
+                        </button>
+                    </a>
+                </li>
+                <!-- input output -->
+                <li class="card-item">
+                    <a href="#" class="card-link">
+                        <img src="img/input_output.png" alt="" class="card-image">
+                        <p class="badge input_output">Input Output</p>
+                        <h2 class="card-title">De opdracht van dit project was om een input-output toepassing te maken. Mijn idee was een autootje te bouwen dat bestuurd wordt met een joystick, de joystick dient als input en het autootje als output. </h2>
                         <button class="card-button material-symbols-outlined">
                             arrow_forward
                         </button>

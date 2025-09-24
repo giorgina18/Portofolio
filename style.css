@@ -168,7 +168,13 @@ button:hover {
     padding: 18px;
     border-radius: 12px;
     text-decoration: none;
+    border: 2px solid transparent;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+    transition: 0.2s ease;
+}
+
+.card-list .card-item .card-link:hover {
+    border-color: #5372f0;
 }
 
 .card-list .card-link .card-image {
@@ -205,8 +211,41 @@ button:hover {
     background: none;
     cursor: pointer;
     border: 2px solid #5372f0;
-    transform: rotate(-45deg );
+    transform: rotate(-45deg);
+    transition: 0.4s ease;
 }
+
+.card-list .card-link:hover .card-button {
+    background: #5372f0;
+    color: #fff;
+}
+
+.card-list .card-link .badge.back_end {
+    background: #7870f0;
+    color: #3d389d;
+}
+
+.card-list .card-link .badge.museum{
+ background: #f451b3;
+    color: #981062;
+}
+
+.card-list .card-link .badge.webshop{
+ background: #49f7c3;
+    color: #188872;
+}
+
+.card-list .card-link .badge.input_output{
+ background: #fff56d;
+    color: #817a20;
+
+}
+
+
+
+
+
+
 
 
 /* Responsive */
