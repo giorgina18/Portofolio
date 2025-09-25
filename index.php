@@ -1,59 +1,8 @@
-<!DOCTYPE html>
-<html lang="nl">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Giorgina Cali</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward" />
-    <script src="script.js" defer></script>
-    <script src="slide.js" defer></script>
-    <!-- swiper.js link -->
-    <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
-</head>
+<?php
+require_once 'template-parts/header.php';
+?>
 
 <body>
-
-    <!-- Navigatiebar algemeen-->
-    <div class="navbar">
-        <div class="container">
-            <div class="navbar-inside">
-                <!-- logo links -->
-                <div class="logo">
-                    <img src="img/foto-me.jpg" alt="foto van wie ik ben">
-                </div>
-
-                <!-- hamburger menu -->
-                <div class="menu-toggle" id="menuToggle">
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                </div>
-
-                <!-- nav bar midden -->
-                <div class="midden">
-                    <ul class="menu" id="menu">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Skills</a></li>
-                        <li><a href="#">Projecten</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">CV</a></li>
-                    </ul>
-                </div>
-
-                <!-- nav bar rechts -->
-                <div class="right">
-                    <ul class="menu">
-                        <li class="menu-right"><a href="#">Over mij</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <main>
         <!-- home page  -->
         <section class="container">
             <div class="info">
@@ -72,10 +21,33 @@
         </section>
 
         <!-- Card slider -->
-        <section class="container">
-            <div class="card-wrapper">
+        <section class="container card-slider">
+            <h1 class="card-text ">Mijn projecten</h1>
+            <div class="card-wrapper ">
                 <div class="swiper">
                     <ul class="card-list swiper-wrapper">
+                        <!-- webshop -->
+                        <li class="card-item swiper-slide">
+                            <a href="https://36725.hosts2.ma-cloud.nl/webshop_BO/" class="card-link">
+                                <img src="img/webshop.png" alt="" class="card-image">
+                                <p class="badge webshop">Webshop</p>
+                                <h2 class="card-title">De opdracht van dit project was om een webshop te maken op basis van de gegeven layout en stijl. Ik heb de webshop gebaseerd op Bol.com en voorzien van drie features die we moesten maken. </h2>
+                                <button class="card-button material-symbols-outlined">
+                                    arrow_forward
+                                </button>
+                            </a>
+                        </li>
+                        <!-- input output -->
+                        <li class="card-item swiper-slide">
+                            <a href="#" class="card-link">
+                                <img src="img/input_output.png" alt="" class="card-image">
+                                <p class="badge input_output">Input Output</p>
+                                <h2 class="card-title">De opdracht van dit project was om een input-output toepassing te maken. Mijn idee was een autootje te bouwen dat bestuurd wordt met een joystick, de joystick dient als input en het autootje als output. </h2>
+                                <button class="card-button material-symbols-outlined">
+                                    arrow_forward
+                                </button>
+                            </a>
+                        </li>
                         <!-- sv_unity -->
                         <li class="card-item swiper-slide">
                             <a href="#" class="card-link">
@@ -109,40 +81,21 @@
                                 </button>
                             </a>
                         </li>
-                        <!-- webshop -->
-                        <li class="card-item swiper-slide">
-                            <a href="https://36725.hosts2.ma-cloud.nl/webshop_BO/" class="card-link">
-                                <img src="img/webshop.png" alt="" class="card-image">
-                                <p class="badge webshop">Webshop</p>
-                                <h2 class="card-title">De opdracht van dit project was om een webshop te maken op basis van de gegeven layout en stijl. Ik heb de webshop gebaseerd op Bol.com en voorzien van drie features die we moesten maken. </h2>
-                                <button class="card-button material-symbols-outlined">
-                                    arrow_forward
-                                </button>
-                            </a>
-                        </li>
-                        <!-- input output -->
-                        <li class="card-item swiper-slide">
-                            <a href="#" class="card-link">
-                                <img src="img/input_output.png" alt="" class="card-image">
-                                <p class="badge input_output">Input Output</p>
-                                <h2 class="card-title">De opdracht van dit project was om een input-output toepassing te maken. Mijn idee was een autootje te bouwen dat bestuurd wordt met een joystick, de joystick dient als input en het autootje als output. </h2>
-                                <button class="card-button material-symbols-outlined">
-                                    arrow_forward
-                                </button>
-                            </a>
-                        </li>
                     </ul>
                 </div>
             </div>
-            <div class="swiper-pagination"></div>
             <div class="swiper-slide-button swiper-button-prev"></div>
             <div class="swiper-slide-button swiper-button-next"></div>
+            <div class="swiper-pagination"></div>
         </section>
 
 
         <!-- linking swiperJS script -->
         <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-    </main>
 </body>
 
 </html>
+
+<?php
+require_once 'template-parts/footer.php';
+?>

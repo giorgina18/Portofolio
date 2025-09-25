@@ -23,6 +23,12 @@ body {
     padding: 0 12px;
 }
 
+.container.card-slider {
+    position:relative;
+    margin-top: 20rem;
+    margin-bottom: 20rem;
+}
+
 /* naviegatie bar */
 .navbar {
     background-color: #2c3E50;
@@ -162,9 +168,13 @@ button:hover {
 
 
 /* card slider */
+.card-text{
+    text-align: center;
+    color: #333;
+    padding: 2rem;
+}
 .card-list .card-item .card-link {
     user-select: none;
-    /* width: 400px; */
     display: block;
     background: #fff;
     padding: 18px;
@@ -175,7 +185,8 @@ button:hover {
     transition: 0.2s ease;
 }
 
-.card-list .card-item .card-link:active{
+
+.card-list .card-item .card-link:active {
     cursor: grabbing;
 }
 
@@ -249,20 +260,24 @@ button:hover {
     transition: 0.4s ease;
 }
 
-.card-wrapper .swiper-pagination-bullet {
+.card-slider .swiper-pagination {
+    position: relative;
+    padding:10px;
+}
+
+.card-slider .swiper-pagination-bullet {
     height: 13px;
     width: 13px;
     opacity: 0.5;
     background: #5372f0;
 }
 
-.card-wrapper .swiper-pagination-bullet-active {
+.card-slider .swiper-pagination-bullet-active {
     opacity: 1;
 }
 
-.card-wrapper .swiper-slide-button {
+.card-slider .swiper-slide-button {
     color: #5372f0;
-    margin-top: -35px;
 }
 
 /* Responsive */
