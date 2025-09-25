@@ -24,7 +24,7 @@ body {
 }
 
 .container.card-slider {
-    position:relative;
+    position: relative;
     margin-top: 20rem;
     margin-bottom: 20rem;
 }
@@ -168,11 +168,12 @@ button:hover {
 
 
 /* card slider */
-.card-text{
+.card-text {
     text-align: center;
     color: #333;
     padding: 2rem;
 }
+
 .card-list .card-item .card-link {
     user-select: none;
     display: block;
@@ -238,6 +239,10 @@ button:hover {
     color: #817a20;
 }
 
+.card-item__content {
+    min-height: 200px;
+}
+
 /* eind badge style */
 
 .card-list .card-link .card-title {
@@ -262,7 +267,7 @@ button:hover {
 
 .card-slider .swiper-pagination {
     position: relative;
-    padding:10px;
+    padding: 10px;
 }
 
 .card-slider .swiper-pagination-bullet {
