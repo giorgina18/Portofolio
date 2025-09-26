@@ -27,9 +27,9 @@ require_once __DIR__ . '/../includes/Utils.php';
     <div class="navbar">
         <div class="container">
             <div class="navbar-inside">
-                <!-- logo links -->
+                <!-- logo links naam -->
                 <div class="logo">
-                    <img src="<?= Utils::asset('img/foto-me.jpg') ?>" alt="foto van wie ik ben">
+                    <p>Giorgina Cali</p>
                 </div>
 
                 <!-- hamburger menu -->

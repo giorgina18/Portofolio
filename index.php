@@ -22,7 +22,7 @@ $projects = $projectModel->getAll();
             </div>
 
             <div class="info-foto-home">
-                <img class="foto-me" src="<?= Utils::asset('img/foto-me.jpg') ?>" alt="foto van wie ik ben">
+                <img class="foto-me" src="<?= Utils::asset('img/giorgina.jpg') ?>" alt="foto van wie ik ben">
             </div>
         </div>
     </section>
@@ -59,6 +59,6 @@ $projects = $projectModel->getAll();
         <div class="swiper-pagination"></div>
     </section>
 
-   
 
-<?php require_once 'template-parts/footer.php'; ?>
+
+    <?php require_once 'template-parts/footer.php'; ?>
