@@ -1,0 +1,16 @@
+# Ignore environment variables
+includes/.env
+
+# Ignore common system files
+.DS_Store
+Thumbs.db
+
+# Ignore IDE/editor configs
+.vscode/
+.idea/
+
+# Ignore vendor (if you use Composer later)
+vendor/
+
+# Ignore node_modules (if you use npm/webpack for frontend)
+node_modules/
