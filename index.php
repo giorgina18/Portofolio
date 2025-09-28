@@ -21,7 +21,7 @@ $projects = $projectModel->getAll();
             </div>
 
             <div class="info-foto-home">
-                <img class="foto-me" src="<?php Utils::asset('img/giorgina.jpg') ?>" alt="foto van wie ik ben">
+                <img class="foto-me" src="img/giorgina.jpg ?>" alt="foto van wie ik ben">
             </div>
         </div>
     </section>
@@ -35,7 +35,7 @@ $projects = $projectModel->getAll();
                     <?php if (!empty($projects)): ?>
                         <?php foreach ($projects as $row): ?>
                             <li class="card-item swiper-slide">
-                                <a href="<?= Utils::baseUrl('project/index.php?id=' . $row['id']) ?>" class="card-link">
+                                <a href="<?= Utils::baseUrl('project/single.php?id=' . $row['id']) ?>" class="card-link">
                                     <img src="<?= Utils::asset($row['image']) ?>" alt="<?= htmlspecialchars($row['title']) ?>" class="card-image">
                                     <div class="card-item__content">
                                         <p class="badge"><?= htmlspecialchars($row['category']) ?></p>
