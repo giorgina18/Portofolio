@@ -1,29 +1,33 @@
 <?php
 class Utils
 {
-    /**   retourneert de base URL of de project root (waar index.php is)
-     * @param string 
-     * @return string
+    /**
+     * Retourneert de base URL van de project root (waar index.php is)
      */
     public static function baseUrl(string $path = ''): string
     {
+        // protocol detectie
         $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? 'https' : 'http';
         $host = $_SERVER['HTTP_HOST'];
 
-        // Forceer de project root folder
-        $projectFolder = '/portofolio';
+        // Bepaal de root folder (waar index.php is)
+        $projectFolder = rtrim(str_replace('\\', '/', dirname($_SERVER['SCRIPT_NAME'])), '/');
+        if ($projectFolder === '/') {
+            $projectFolder = '';
+        }
 
+        // Basis URL opbouwen
         $url = $protocol . '://' . $host . $projectFolder;
 
+        // Optioneel pad toevoegen
         if ($path) {
             $path = ltrim($path, '/');
             $url .= '/' . $path;
         }
+
         return $url;
     }
 
-    //   URL ophalen voor assets (CSS, JS, images)
-     
     public static function asset(string $path): string
     {
         return self::baseUrl($path);

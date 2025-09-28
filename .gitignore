@@ -1,5 +1,6 @@
 # Ignore environment variables
-includes/.env
+.env
+.env-local
 
 # Ignore common system files
 .DS_Store

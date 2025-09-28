@@ -7,7 +7,6 @@ $projectModel = new Project();
 $projects = $projectModel->getAll();
 ?>
 
-<body>
     <!-- Home page -->
     <section class="container">
         <div class="info">
@@ -22,7 +21,7 @@ $projects = $projectModel->getAll();
             </div>
 
             <div class="info-foto-home">
-                <img class="foto-me" src="<?= Utils::asset('img/giorgina.jpg') ?>" alt="foto van wie ik ben">
+                <img class="foto-me" src="<?php Utils::asset('img/giorgina.jpg') ?>" alt="foto van wie ik ben">
             </div>
         </div>
     </section>

@@ -6,12 +6,17 @@ class Database
 
     private function __construct()
     {
-        // Load .env
-        $envPath = __DIR__ . '/.env';
+        // Detect localhost
+        $isLocal = $this->isLocalhost();
+
+        // Pick correct env file
+        $envPath = __DIR__ . '/../' . ($isLocal ? '.env-local' : '.env');
+
         if (!file_exists($envPath)) {
-            die(".env file not found in includes folder");
+            die("Environment file not found: $envPath");
         }
 
+        // Load .env file
         $lines = file($envPath, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
         foreach ($lines as $line) {
             if (strpos(trim($line), '#') === 0) continue;
@@ -36,7 +41,14 @@ class Database
         }
     }
 
-    // 1 object
+    // ✅ Detect if page is running on localhost
+    private function isLocalhost(): bool
+    {
+        $host = $_SERVER['HTTP_HOST'] ?? 'cli'; // handle CLI usage too
+        return in_array($host, ['localhost', '127.0.0.1', '::1'], true);
+    }
+
+    // Singleton instance
     public static function getInstance(): Database
     {
         if (self::$instance === null) {
