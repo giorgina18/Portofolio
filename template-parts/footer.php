@@ -5,7 +5,7 @@
                 Giorgina Cali
             </p>
             <div class="footer-social">
-                <!-- hier nog ff de socials icons toevoegen -->
+                <!-- Socials icons -->
                 <a href="https://github.com/"><i class="fa-brands fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/giorgina-cali-45190b383/"><i class="fa-brands fa-linkedin"></i></a>
             </div>
@@ -18,17 +18,15 @@
         <div class="footer-col footer-sitemap">
             <h4>Snelle Links</h4>
             <ul>
-                <li><a href="index.php">Home</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#projecten">Projecten</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">CV</a></li>
+                <li><a href="<?= Utils::baseUrl('index.php') ?>">Home</a></li>
+                <li><a href="<?= Utils::baseUrl('index.php#skills') ?>">Skills</a></li>
+                <li><a href="<?= Utils::baseUrl('index.php#projecten') ?>">Projecten</a></li>
+                <li><a href="<?= Utils::baseUrl('index.php#blog') ?>">Blog</a></li>
+                <li><a href="<?= Utils::asset('img/cv.pdf') ?>" download>CV</a></li>
             </ul>
         </div>
     </div>
-
 </footer>
-
 
 <!-- SwiperJS script -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>

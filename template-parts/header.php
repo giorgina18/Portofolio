@@ -41,18 +41,18 @@ require_once __DIR__ . '/../includes/Utils.php';
                 <!-- nav bar midden -->
                 <div class="midden">
                     <ul class="menu" id="menu">
-                        <li><a href="<?= Utils::baseUrl() ?>">Home</a></li>
-                        <li><a href="<?= Utils::baseUrl('#skills') ?>">Skills</a></li>
-                        <li><a href="<?= Utils::baseUrl('#projecten') ?>">Projecten</a></li>
-                        <li><a href="<?= Utils::baseUrl('#blog') ?>">Blog</a></li>
-                        <li><a href="<?= Utils::baseUrl('#cv') ?>">CV</a></li>
+                        <li><a href="<?= Utils::baseUrl('index.php') ?>">Home</a></li>
+                        <li><a href="<?= Utils::baseUrl('index.php#skills') ?>">Skills</a></li>
+                        <li><a href="<?= Utils::baseUrl('index.php#projecten') ?>">Projecten</a></li>
+                        <li><a href="<?= Utils::baseUrl('index.php#blog') ?>">Blog</a></li>
+                        <li><a href="<?= Utils::asset('img/cv.pdf') ?>" download>CV</a></li>
                     </ul>
                 </div>
 
                 <!-- nav bar rechts -->
                 <div class="right">
                     <ul class="menu">
-                        <li class="menu-right"><a href="<?= Utils::baseUrl('#over-mij') ?>">Over mij</a></li>
+                        <li class="menu-right"><a href="<?= Utils::baseUrl('index.php#over-mij') ?>">Over mij</a></li>
                     </ul>
                 </div>
             </div>
