@@ -52,7 +52,9 @@ require_once __DIR__ . '/../includes/Utils.php';
                 <!-- nav bar rechts -->
                 <div class="right">
                     <ul class="menu">
-                        <li class="menu-right"><a href="<?= Utils::baseUrl('index.php#over-mij') ?>">Over mij</a></li>
+                        <li class="menu-right">
+                            <a href="<?= Utils::baseUrl('over_mij/aboutme.php') ?>">Over mij</a>
+                        </li>
                     </ul>
                 </div>
             </div>

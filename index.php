@@ -17,7 +17,7 @@ $projects = $projectModel->getAll();
                 waar ik nu in mijn derde jaar zit.<br>
                 Mijn interesse en focus liggen vooral bij front-end en back-end development.
             </p>
-            <button href="#" class="button-info">Klik hier voor meer informatie</button>
+            <a href="over_mij/aboutme.php" class="button-info">Klik hier voor meer informatie</a>
         </div>
 
         <div class="info-foto-home">

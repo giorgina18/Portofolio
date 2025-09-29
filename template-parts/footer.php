@@ -5,7 +5,6 @@
                 Giorgina Cali
             </p>
             <div class="footer-social">
-                <!-- Socials icons -->
                 <a href="https://github.com/"><i class="fa-brands fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/giorgina-cali-45190b383/"><i class="fa-brands fa-linkedin"></i></a>
             </div>
