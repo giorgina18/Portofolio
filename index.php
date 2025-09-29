@@ -21,7 +21,7 @@ $projects = $projectModel->getAll();
         </div>
 
         <div class="info-foto-home">
-            <img class="foto-me" src="img/giorgina.jpg ?>" alt="foto van wie ik ben">
+            <img class="foto-me" src="img/giorgina.jpg" alt="foto van wie ik ben">
         </div>
     </div>
 </section>
