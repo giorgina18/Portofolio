@@ -2,7 +2,6 @@
     require_once '../includes/db_functions.php';
     require_once '../includes/Utils.php';
     require_once '../template-parts/header.php';
-
     ?>
 
  <!-- Over Mij Sectie -->
@@ -13,7 +12,7 @@
              Hier ga ik wat meer over mezelf hebben:<br>
              Ik vind sporten heel leuk om te doen, ik zit al heel lang op voetbal. Ik begon met voetbal toen ik 6 jaar was. Toen was ik een korte periode gestopt met voetbal en ging ik 1 jaar kickboksen. Nu ben ik weer opnieuw begonnen met voetbal bij voetbal vereniging Koedijk.<br>
              Ook vind ik koken heel erg leuk om te doen, van jongs af aan begon ik al heel vroeg met koken en bakken. Toen ik mijn diploma behaalde op de middelbare school ging ik naar MBO niveau 2 koksopleiding doen op Horizon College Heerhugowaard. Na dat ik mijn diploma heb behaald wou ik toch iets anders doen en het koken liever als hobby behouden.<br>
-             Toen kwam ik erachter dat ik Software Developer ook heel leuk en interessant vindt om te doen. Nu ben ik bezig met mijn opleiding Software Developer Niveau 4 en zit ik in het derde jaar. Ik vind het super leuk om te doen en zou graag meer willen leren over Front-end en Back-end.
+             Toen kwam ik erachter dat ik Software Developer ook heel leuk en interessant vindt om te doen. Nu ben ik bezig met mijn opleiding Software Developer Niveau 4 en zit ik in het derde jaar. Ik vind het super leuk om te doen en zou graag meer willen leren over Front-end en Back-end.<br> Daarnaast hou ik ook erg veel van dieren, zelf heb ik een kat en die heet Banjo en hij is 17 jaar.
          </p>
      </div>
      <div class="foto-ik">

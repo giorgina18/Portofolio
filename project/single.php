@@ -44,6 +44,14 @@ $projectId = isset($_GET['id']) ? (int) $_GET['id'] : 0;
                     </p>
                 <?php endif; ?>
 
+                <?php if (!empty($project['linkgit'])): ?>
+                    <p>
+                        <a href="<?= htmlspecialchars($project['linkgit']) ?>" target="_blank" class="button-info">
+                            Bekijk op GitHub
+                        </a>
+                    </p>
+                <?php endif; ?>
+
                 <p>
                     <a href="<?= Utils::baseUrl() ?>" class="button-back">← Terug naar overzicht</a>
                 </p>
@@ -55,8 +63,6 @@ $projectId = isset($_GET['id']) ? (int) $_GET['id'] : 0;
 
     <?php else: ?>
         <?php
-
-
         // Homepage / overzicht van projecten
         $projects = $projectModel->getAll();
         foreach ($projects as $project):
