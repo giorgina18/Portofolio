@@ -58,10 +58,11 @@ $projects = $projectModel->getAll();
     <div class="swiper-pagination"></div>
 </section>
 
-
+<!-- skills -->
 <section class="container" id="skills">
     <h1>Mijn Skills</h1>
 
+    <!-- Eerste groep skills -->
     <div class="skills-wrapper">
         <!-- HTML -->
         <div class="skill-box">
@@ -71,7 +72,7 @@ $projects = $projectModel->getAll();
             <div class="skill-info">
                 <h3>HTML</h3>
                 <p>HTML is een van de eerste code die ik heb geleerd op Media College,
-                    ik weet ook hoe ik het moet combineren met SASS, CSS, JS en PHP. </p>
+                    ik weet ook hoe ik het moet combineren met SASS, CSS, JS en PHP.</p>
             </div>
         </div>
 
@@ -82,7 +83,7 @@ $projects = $projectModel->getAll();
             </div>
             <div class="skill-info">
                 <h3>CSS</h3>
-                <p>Ik gebruik CSS voor responsive design en om websites er mooier en strakker euit te laten zien.</p>
+                <p>Ik gebruik CSS voor responsive design en om websites er mooier en strakker uit te laten zien.</p>
             </div>
         </div>
 
@@ -94,18 +95,18 @@ $projects = $projectModel->getAll();
             <div class="skill-info">
                 <h3>JavaScript</h3>
                 <p>Met JavaScript maak ik websites interactief en laat ik elementen reageren op wat mensen doen, zoals klikken of formulieren invullen.
-                    Het is wel iets wat ik nog een beetje lastig vind, maar zou er wel graag meer over wil leren.</p>
+                    Het is wel iets wat ik nog een beetje lastig vind, maar zou er wel graag meer over willen leren.</p>
             </div>
         </div>
 
-        <!-- sass -->
+        <!-- Sass -->
         <div class="skill-box">
             <div class="skill-icon">
-                <img src="img/sass.png" alt="React">
+                <img src="img/sass.png" alt="Sass">
             </div>
             <div class="skill-info">
                 <h3>Sass</h3>
-                <p>Ik heb ervaring met SASS en heb het bij een eerder project gebruikt om CSS makkelijker te organiseren en sneller aan te passen, wat ik erg handig en makkelijk vond om toe te passen.</p>
+                <p>Ik heb ervaring met SASS en heb het bij een eerder project gebruikt om CSS makkelijker te organiseren en sneller aan te passen.</p>
             </div>
         </div>
 
@@ -116,30 +117,74 @@ $projects = $projectModel->getAll();
             </div>
             <div class="skill-info">
                 <h3>PHP</h3>
-                <p>Ik heb ervaring met PHP en gebruik ik om dingen achter de schermen te regelen, zoals data opslaan of zoals nu naar mijn projecten verwijzen.</p>
+                <p>Ik gebruik PHP om dingen achter de schermen te regelen, zoals data opslaan of verbinding maken met projecten.</p>
             </div>
         </div>
-        <!-- my sql -->
+
+        <!-- MySQL -->
         <div class="skill-box">
             <div class="skill-icon">
-                <img src="img/mysql.png" alt="PHP">
+                <img src="img/mysql.png" alt="MySQL">
             </div>
             <div class="skill-info">
                 <h3>MySQL</h3>
-                <p>Ik heb wat ervaring met MySQL, waarbij ik werkte met databases om gegevens op te slaan en op te vragen. Ik vind het nog een beetje lastig, maar ik zou er wel graag meer over leren.</p>
+                <p>Ik heb wat ervaring met MySQL, waarbij ik werkte met databases om gegevens op te slaan en op te vragen.</p>
             </div>
         </div>
-        <!-- github -->
+
+        <!-- GitHub -->
         <div class="skill-box">
             <div class="skill-icon">
-                <img src="img/github.png" alt="PHP">
+                <img src="img/github.png" alt="GitHub">
             </div>
             <div class="skill-info">
-                <h3>Github</h3>
-                <p>Ik gebruik GitHub om mijn projecten veilig op te slaan, veranderingen bij te houden en samen te werken als dat nodig is.</p>
+                <h3>GitHub</h3>
+                <p>Ik gebruik GitHub om mijn projecten veilig op te slaan, veranderingen bij te houden en samen te werken.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Frameworks apart -->
+    <h2>Frameworks</h2>
+    <div class="skills-wrapper frameworks">
+        <!-- Laravel -->
+        <div class="skill-box">
+            <div class="skill-icon">
+                <img src="img/laravel.png" alt="Laravel">
+            </div>
+            <div class="skill-info">
+                <h3>Laravel</h3>
+                <p>Ik heb Laravel eerder gebruikt en vind het een handige werkmethode.</p>
+            </div>
+        </div>
+
+        <!-- WordPress -->
+        <div class="skill-box">
+            <div class="skill-icon">
+                <img src="img/wordpress.png" alt="WordPress">
+            </div>
+            <div class="skill-info">
+                <h3>WordPress</h3>
+                <p>Ik heb ervaring met WordPress en heb eerder een eigen child theme gecodeerd. ik vind het leuk en handig om te gebruiken waar ik graag ook verder mee zou willen werken.</p>
             </div>
         </div>
     </div>
 </section>
 
+
+<!-- contact us formulier -->
+<div class="contact-us">
+    <form id="contactForm" autocomplete="off">
+        <!-- text -->
+        <input type="text" placeholder="Uw naam" id="name" name="name" required>
+        <!-- email -->
+        <input type="email" placeholder="Uw e-mail" id="email" name="email" required>
+        <!-- telefoon -->
+        <input type="tel" placeholder="Uw telefoon nummer" id="phone" minlength="9" maxlength="14" name="phone" required>
+        <!-- message -->
+        <textarea name="message" id="message" placeholder="Uw bericht" rows="4" required></textarea>
+        <button type="submit">Bericht verzenden</button>
+
+    </form>
+</div>
 <?php require_once 'template-parts/footer.php'; ?>

@@ -41,7 +41,7 @@ class Database
         }
     }
 
-    // ✅ Detect if page is running on localhost
+    //  Detect if page is running on localhost
     private function isLocalhost(): bool
     {
         $host = $_SERVER['HTTP_HOST'] ?? 'cli'; // handle CLI usage too
